@@ -1,0 +1,26 @@
+// styles.scss (o el nombre que le hayas dado a tu archivo SCSS)
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; // Esto asegura que el contenedor ocupe toda la altura de la pantalla
+  
+    background-color: #e75480; // Rosa oscuro
+  }
+  
+  ion-item {
+    width: 80%; // Ancho del 80% para los elementos ion-item
+    margin-bottom: 15px; // Espaciado entre elementos
+  }
+  
+  ion-button {
+    width: 80%; // Ancho del 80% para el botón
+    margin-top: 15px; // Espaciado entre el último ion-item y el botón
+  }
+  
+  ion-toolbar {
+    background-color: #ff8ebc; // Rosa más claro para la barra de herramientas
+  }
+  

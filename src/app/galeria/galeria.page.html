@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Galería de Imágenes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let imagen of imagenes">
+    <ion-img [src]="imagen.url"></ion-img>
+    <ion-card-content>
+      {{ imagen.descripcion }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

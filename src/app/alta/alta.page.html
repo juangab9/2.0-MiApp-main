@@ -1,0 +1,52 @@
+<!-- alta.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulario de Alta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="nuevoElemento.nombre" name="nombre"></ion-input>
+  </ion-item>
+
+  <!-- Agregar campos adicionales al formulario -->
+  <ion-item>
+    <ion-label position="floating">Apellido</ion-label>
+    <ion-input [(ngModel)]="nuevoElemento.apellido" name="apellido"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Fecha de Nacimiento</ion-label>
+    <ion-input type="date" [(ngModel)]="nuevoElemento.fechaNacimiento" name="fechaNacimiento"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Ciudad</ion-label>
+    <ion-input [(ngModel)]="nuevoElemento.ciudad" name="ciudad"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Sexo</ion-label>
+    <ion-select [(ngModel)]="nuevoElemento.sexo" name="sexo">
+      <ion-select-option value="masculino">Masculino</ion-select-option>
+      <ion-select-option value="femenino">Femenino</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Número de Teléfono</ion-label>
+    <ion-input type="tel" [(ngModel)]="nuevoElemento.telefono" name="telefono"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Subir Fotos</ion-label>
+    <input type="file" (change)="onFileChange($event)" accept="image/*" multiple>
+  </ion-item>
+
+  <ion-button expand="full" (click)="agregarElemento()">Agregar</ion-button>
+  <ion-button expand="full" (click)="verLista()">Ver Lista</ion-button>
+  <ion-button expand="full" (click)="irAGaleria()">Ir a Galería</ion-button>
+</ion-content>
+

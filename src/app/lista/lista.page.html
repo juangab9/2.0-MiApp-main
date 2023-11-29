@@ -1,0 +1,13 @@
+<!-- lista.page.html --><ion-list>
+  <ion-item *ngFor="let elemento of elementos">
+    <ion-label>
+      <h2>{{ elemento.nombre }}</h2>
+      <p>{{ elemento.apellido }}</p>
+      <p>{{ elemento.fechaNacimiento }}</p>
+      <p>{{ elemento.ciudad }}</p>
+      <p>{{ elemento.sexo }}</p>
+      <p>{{ elemento.telefono }}</p>
+      <!-- Puedes agregar más campos según tus necesidades -->
+    </ion-label>
+  </ion-item>
+</ion-list>
